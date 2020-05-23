@@ -1,0 +1,374 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter3_Arithmetic · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../Chapter2/Chapter2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">计算机组成</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Chapter1/Chapter1.html">
+            
+                <a href="../Chapter1/Chapter1.html">
+            
+                    
+                    Chapter1_综述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Chapter2/Chapter2.html">
+            
+                <a href="../Chapter2/Chapter2.html">
+            
+                    
+                    Chapter2_MIPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="Chapter3.html">
+            
+                <a href="Chapter3.html">
+            
+                    
+                    Chapter3_Arithmetic
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Chapter3_Arithmetic</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="chapter-3---arithmetic-for-computers">Chapter 3   Arithmetic for Computers</h3>
+<h4 id="number">Number</h4>
+<ul>
+<li>1word = 32bits &#xFF0C;word&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x5404;&#x79CD;&#x6307;&#x4EE4;&#x4E2D;</li>
+<li>&#x6240;&#x6709;&#x6307;&#x4EE4;&#x5728;&#x8BFB;&#x5BC4;&#x5B58;&#x5668;&#x6570;&#x636E;&#x540E;&#x90FD;&#x8981;&#x8FDB;&#x884C;alu&#x8FD0;&#x7B97;</li>
+<li>&#x8BA1;&#x7B97;&#x673A;&#x5904;&#x7406;&#x7684;&#x90FD;&#x662F;&#x4E00;&#x4E32;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#xFF0C;&#x4EE3;&#x8868;&#x4EC0;&#x4E48;&#x542B;&#x4E49;&#x770B;&#x5177;&#x4F53;&#x573A;&#x666F;</li>
+<li>2&#x7684;&#x8865;&#x7801;&#x662F;&#x5927;&#x5BB6;&#x666E;&#x904D;&#x63A5;&#x53D7;&#x7684;&#x6570;&#x7684;&#x8868;&#x793A;&#x5F62;&#x5F0F;&#xFF0C;&#x5176;&#x53EF;&#x4EE5;&#x7528;&#x552F;&#x4E00;&#x6570;&#x5B66;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x8868;&#x793A;&#x3002;</li>
+<li>&#x6D6E;&#x70B9;&#x6570;&#xFF1A; IEEE 754</li>
+<li>&#x539F;&#x7801;&#x8868;&#x793A;&#x548C;&#x53CD;&#x7801;&#x8868;&#x793A;&#xFF1A;+0&#x548C;-0&#x4E0D;&#x91CD;&#x5408;</li>
+<li><strong>&#x6CE8;&#x610F;&#xFF1A; 1000 = -8&#xFF0C;&#x4E24;&#x4E2A;0&#x91CD;&#x5408;&#x591A;&#x51FA;&#x6765;&#x7684;&#x4F4D;&#x7F6E;&#x5206;&#x914D;&#x7ED9;-2^n</strong></li>
+</ul>
+<h4 id="alu&#xFF08;&#x7B97;&#x903B;&#x5355;&#x5143;&#xFF09;">ALU&#xFF08;&#x7B97;&#x903B;&#x5355;&#x5143;&#xFF09;</h4>
+<ul>
+<li><p><strong>Overflow</strong></p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4E24;&#x4E2A;&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x76F8;&#x51CF;&#xFF0C;&#x5F53;&#x51CF;&#x6570;&#x5927;&#x4E8E;&#x88AB;&#x51CF;&#x6570;&#x65F6;&#xFF0C;&#x4F1A;&#x5C06;&#x7ED3;&#x679C;&#x8F6C;&#x6362;&#x4E3A;&#x6709;&#x7B26;&#x53F7;&#x6570;&#xFF0C;&#x6700;&#x9AD8;&#x4F4D;&#x4EE3;&#x8868;&#x7B26;&#x53F7;&#x4F4D;&#x3002;</p>
+<p>&#x6EA2;&#x51FA;&#x6761;&#x4EF6;&#xFF1A; 1.&#x6B63;+&#x6B63;<0 2.负+负="">0 3.&#x6B63;-&#x8D1F;<0 4.负-正="">0</0></0></p>
+<p><strong>&#x6EA2;&#x51FA;&#x7684;&#x4E00;&#x79CD;&#x5904;&#x7406;&#x65B9;&#x5F0F;</strong>&#xFF1A;&#x4E24;&#x4F4D;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;&#x5F53;&#x8FD9;&#x4E24;&#x4F4D;&#x6570;&#x503C;&#x4E0D;&#x7B49;&#xFF0C;&#x5373;&#x6EA2;&#x51FA;</p>
+<p>&#x786C;&#x4EF6;&#x5C42;&#x9762;&#x5FFD;&#x7565;Overflow&#xFF0C;&#x53EA;&#x7ED9;&#x51FA;&#x6EA2;&#x51FA;&#x4FE1;&#x53F7;</p>
+</li>
+<li><p><strong>&#x54EA;&#x4E9B;&#x6307;&#x4EE4;&#x4F1A;&#x4EA7;&#x751F;&#x6EA2;&#x51FA;&#xFF1F;</strong>  -&gt;add addi sub</p>
+</li>
+<li><p>lbu&#x6307;&#x4EE4;:unsigned&#x586B;&#x5145;&#xFF0C;&#x524D;24&#x4F4D;&#x586B;0</p>
+<p>lb&#x6307;&#x4EE4;:signed&#x586B;&#x5145;&#xFF0C;&#x524D;24&#x4F4D;&#x586B;&#x7B26;&#x53F7;&#x4F4D;</p>
+</li>
+<li><p><strong>&#x5982;&#x4F55;&#x6784;&#x9020;&#x4E00;&#x4E2A;ALU&#xFF1F;</strong></p>
+<p>&#x200B;    &#x5148;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x4E00;&#x4F4D;&#x7684;ALU&#x90E8;&#x4EF6;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x4E00;&#x7EF4;&#x8C03;&#x7528;(&#x4E32;&#x884C;&#x8FDE;&#x63A5;)&#x5F62;&#x6210;&#x9635;&#x5217;&#x3002;</p>
+<p>&#x200B;    &#x53EF;&#x4EE5;&#x5BF9;&#x8FDB;&#x4F4D;&#x4F20;&#x8F93;&#x8FDB;&#x884C;&#x4F18;&#x5316;(&#x8D85;&#x524D;&#x8FDB;&#x4F4D;)&#xFF0C;&#x5206;&#x7EC4;&#x8BA1;&#x7B97;</p>
+<p>&#x200B;    slt&#x6784;&#x9020;&#xFF1A;&#x53D6;&#x51CF;&#x6CD5;&#x7ED3;&#x679C;&#x7684;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;&#x5176;&#x4ED6;&#x4F4D;&#x90FD;&#x7F6E;0</p>
+<p>&#x200B;    &#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x7528;&#x786C;&#x4EF6;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#xFF0C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;</p>
+<p>&#x200B;    Function table</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ALU Control Lines</th>
+<th>Functions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000</td>
+<td>And</td>
+</tr>
+<tr>
+<td>001</td>
+<td>Or</td>
+</tr>
+<tr>
+<td>010</td>
+<td>Add</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Sub</td>
+</tr>
+<tr>
+<td>111</td>
+<td>SLT</td>
+</tr>
+<tr>
+<td>100</td>
+<td>nor</td>
+</tr>
+<tr>
+<td>101</td>
+<td>srl</td>
+</tr>
+<tr>
+<td>011</td>
+<td>sor</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x5BC4;&#x5B58;&#x5668;&#x64CD;&#x4F5C;&#x6570;</strong></p>
+<p>&#x200B;    Register files:</p>
+<p>&#x200B;    &#x652F;&#x6301;2&#x8DEF;&#x8BFB;(rs,rt)&#xFF0C;1&#x8DEF;&#x5199;(rd/rt),&#x56E0;&#x6B64;&#x8BF4;&#x5BC4;&#x5B58;&#x5668;&#x64CD;&#x4F5C;&#x662F;&#x6700;&#x5FEB;&#x7684;</p>
+<p><img src="image-20200524004500305.png" alt="image-20200524004500305"></p>
+<p>&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;</p>
+<p>&#x200B;    &#x8BFB;&#x53D6;&#xFF1A;</p>
+<p><img src="image-20200524004706708.png" alt="image-20200524004706708"></p>
+<p>&#x200B;    &#x5199;&#x5165;&#xFF1A;</p>
+<p><img src="image-20200524004732555.png" alt="image-20200524004732555"></p>
+<p><strong>&#x4E58;&#x6CD5;&#xFF1A;</strong></p>
+<ul>
+<li><p>&#x5BC6;&#x7801;&#x5B66;&#x91CC;&#x7684;&#x519C;&#x592B;&#x4E58;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x5DE6;&#x79FB;&#x53F3;&#x79FB;&#x4E00;&#x4F4D;&#x6765;&#x8FDB;&#x884C;&#xFF0C;32&#x4F4D;&#x6570;&#x6BCF;&#x6B65;&#x5C31;&#x9700;&#x8981;&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;&#xFF0C;&#x5224;&#x65AD;&#xFF0C;&#x5DE6;&#x79FB;&#xFF0C;&#x53F3;&#x79FB;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5C06;&#x8FD1;100&#x4E2A;&#x65F6;&#x95F4;&#x5468;&#x671F;&#xFF0C;&#x592A;&#x6162;&#x3002;</p>
+</li>
+<li><p>&#x4E8E;&#x662F;&#x8FDB;&#x884C;32&#x4F4D;&#x4E00;&#x7EC4;&#x7684;&#x4F18;&#x5316;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x7ED3;&#x679C;&#x548C;&#x4E58;&#x6570;&#x7684;&#x79FB;&#x4F4D;&#x5B9E;&#x73B0;&#x3002;</p>
+</li>
+<li><p>&#x65E9;&#x671F;&#x7684;&#x4F18;&#x5316;&#x90FD;&#x662F;&#x4ECE;&#x7535;&#x8DEF;&#x7ED3;&#x6784;&#x4E0A;&#x6765;&#x4F18;&#x5316;&#x7684;&#x3002;</p>
+</li>
+<li><p>&#x968F;&#x540E;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF1A;&#x5C06;&#x4E58;&#x6570;&#x653E;&#x5728;&#x540E;32&#x4F4D;&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;&#x4F1A;&#x88AB;&#x79FB;&#x4F4D;&#x51FA;&#x53BB;&#x3002;(<strong>&#x8FD9;&#x91CC;&#x7684;&#x79FB;&#x4F4D;&#x90FD;&#x662F;&#x7B97;&#x6570;&#x79FB;&#x4F4D;</strong>)</p>
+</li>
+<li><p>Booth &#x7B97;&#x6CD5;&#xFF0C;&#x5BF9;&#x4E00;&#x4E32;&#x8FDE;&#x7EED;1&#x6709;&#x5F88;&#x597D;&#x7684;&#x4F18;&#x5316;&#x6548;&#x679C;&#x4E3E;&#x4F8B;011100-&gt;100000-000100</p>
+<p>Booth&#x7B97;&#x6CD5;&#x9700;&#x8981;&#x770B;&#x4E24;&#x4F4D;&#xFF1A;current last &#xFF0C;&#x7B2C;&#x4E00;&#x4F4D;&#x65F6;&#x89C4;&#x5B9A;Bit-1 = 0</p>
+<p>10&#xFF1A;sub  11:shift  01: add  00 : shift</p>
+</li>
+</ul>
+<p><strong>&#x9664;&#x6CD5;&#xFF1A;</strong></p>
+<ul>
+<li>&#x88AB;&#x9664;&#x6570;&lt;&#x9664;&#x6570; -&gt;&#x653E;&#x4F59;&#x6570;</li>
+<li>&#x8FED;&#x4EE3;&#x7684;&#x8FDB;&#x884C;&#x51CF;&#x6CD5;&#x64CD;&#x4F5C;&#xFF0C;&#x5176;&#x4E2D;&#x79FB;&#x4F4D;&#x64CD;&#x4F5C;&#x4E0E;&#x4E58;&#x6CD5;&#x5341;&#x5206;&#x76F8;&#x4F3C;</li>
+<li>&#x5341;&#x8FDB;&#x5236;&#x7684;&#x957F;&#x9664;&#x5F88;&#x590D;&#x6742;&#xFF0C;&#x4F46;&#x4E8C;&#x8FDB;&#x5236;&#x975E;0&#x5373;1</li>
+<li>&#x6CE8;&#x610F;MIPS&#x4E2D;&#x4E58;&#x9664;&#x6CD5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;mflo/mfhi&#x6307;&#x4EE4;&#x590D;&#x5236;&#x7ED3;&#x679C;&#x5230;&#x67D0;&#x5BC4;&#x5B58;&#x5668;&#x4E2D; </li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-05-24 00:57:54
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter2/Chapter2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Chapter2_MIPS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter3_Arithmetic","level":"2.3","depth":1,"previous":{"title":"Chapter2_MIPS","level":"2.2","depth":1,"path":"Computer Organization/Chapter2/Chapter2.md","ref":"./Computer Organization/Chapter2/Chapter2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"Computer Organization/Chapter3/Chapter3.md","mtime":"2020-05-23T16:57:54.477Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-23T17:01:39.778Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
