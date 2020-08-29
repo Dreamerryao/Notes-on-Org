@@ -33,6 +33,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
                 
             
@@ -234,16 +238,16 @@
                                 
                                 <h1 id="&#x50A8;&#x5907;&#x77E5;&#x8BC6;">&#x50A8;&#x5907;&#x77E5;&#x8BC6;</h1>
 <h2 id="c-&#x50A8;&#x5907;&#x77E5;&#x8BC6;-&#x8DF3;&#x8DF3;&#x8DF3;">C++ &#x50A8;&#x5907;&#x77E5;&#x8BC6; (&#x8DF3;&#x8DF3;&#x8DF3;</h2>
-<pre><code class="lang-c++">#include &lt;iostream&gt;
+<pre class="language-"><code class="lang-c++">#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iostream</span><span class="token punctuation">&gt;</span></span>
 using namespace std; //&#x547D;&#x540D;&#x7A7A;&#x95F4;
 int main(){
     cout&lt;&lt;&quot;OOP zhuaba&quot;&lt;&lt;endl;
     return 0;
 }
 </code></pre>
-<pre><code class="lang-c++">#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;fstream&gt;
+<pre class="language-"><code class="lang-c++">#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iostream</span><span class="token punctuation">&gt;</span></span>
+#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>
+#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fstream</span><span class="token punctuation">&gt;</span></span>
 using namespace std;
 int main(){
     //string
@@ -267,9 +271,9 @@ int main(){
 
     //pointer to Objects
     string s = &quot;Hello&quot;;
-    string *ps = &amp;s;
-    cout&lt;&lt;&quot;string address&quot;&lt;&lt;ps&lt;&lt;endl;
-    cout&lt;&lt;&quot;string length&quot;&lt;&lt; ps-&gt;length()&lt;&lt;endl;
+    string *ps = <span class="token entity named-entity" title="&amp;s;">&amp;s;</span>
+    cout&lt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&quot;string</span> <span class="token attr-name">address&quot;&lt;&lt;ps&lt;&lt;endl;</span>
+    <span class="token attr-name">cout&lt;&lt;&quot;string</span> <span class="token attr-name">length&quot;&lt;&lt;</span> <span class="token attr-name">ps-</span><span class="token punctuation">&gt;</span></span>length()&lt;&lt;endl;
 
 
     return 0;
@@ -277,7 +281,7 @@ int main(){
 </code></pre>
 <h2 id="c-&#x52A8;&#x6001;&#x5206;&#x914D;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x7B26;-new--delete">C++ &#x52A8;&#x6001;&#x5206;&#x914D;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x7B26; new &amp;&amp; delete</h2>
 <p><img align="absmiddle" alt=":star:" class="emoji" src="../gitbook/gitbook-plugin-advanced-emoji/emojis/star.png" title=":star:"> &#x6307;&#x9488;&#x662F;&#x8BBF;&#x95EE;&#x8BE5;&#x79CD;&#x65B9;&#x6CD5;&#x5206;&#x914D;&#x51FA;&#x7684;&#x5185;&#x5B58;&#x7684;&#x552F;&#x4E00;&#x65B9;&#x5F0F;</p>
-<pre><code class="lang-c++">int * pint = new int[10];
+<pre class="language-"><code class="lang-c++">int * pint = new int[10];
 delete [] pint;
 </code></pre>
 <h3 id="new-vs-malloc">new VS malloc</h3>
@@ -287,8 +291,8 @@ delete [] pint;
 <h3 id="tips">Tips</h3>
 <ul>
 <li><p>&#x4E0D;&#x8981;delete&#x540C;&#x4E00;&#x5757;&#x5185;&#x5B58;&#x4E24;&#x6B21;</p>
-<pre><code class="lang-c++">#include &lt;iostream&gt;
-#include &lt;string&gt;
+<pre class="language-"><code class="lang-c++">#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iostream</span><span class="token punctuation">&gt;</span></span>
+#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>
 using namespace std;
 class test{
     private:
@@ -306,7 +310,7 @@ int main(){
 }
 </code></pre>
 <p>&#x7A0B;&#x5E8F;&#x4F1A;&#x66B4;&#x6BD9;,output</p>
-<pre><code>test ctor
+<pre class="language-"><code>test ctor
 test dtor
 test dtor
 </code></pre></li>
@@ -347,18 +351,18 @@ test dtor
 <h2 id="tips"><img align="absmiddle" alt=":star:" class="emoji" src="../gitbook/gitbook-plugin-advanced-emoji/emojis/star.png" title=":star:"> Tips</h2>
 <ul>
 <li><p>&#x5173;&#x4E8E;&#x65E5;&#x5E38;&#x5F04;&#x6DF7;&#x7684; &gt;&gt;  &lt;&lt;</p>
-<pre><code class="lang-c++">  int number;
+<pre class="language-"><code class="lang-c++">  int number;
   std::cin&gt;&gt;number;// &#x5C16;&#x62EC;&#x53F7;&#x6307;&#x5230;&#x54EA;&#x91CC;&#x5C31;&#x8868;&#x793A;&#x5199;&#x5230;&#x54EA;
   std::cout&lt;&lt;number&lt;&lt;std::endl;
 </code></pre>
 </li>
 <li><p>&#x5206;&#x6E05;&#x8D4B;&#x503C;(Assignment)&#x548C;&#x6784;&#x9020;(Ctor)</p>
-<pre><code class="lang-c++">  str3 = str1+str2; //&#x8D4B;&#x503C;
+<pre class="language-"><code class="lang-c++">  str3 = str1+str2; //&#x8D4B;&#x503C;
   str3(str1+str2);//&#x6784;&#x9020;
 </code></pre>
 </li>
 <li><p>&#x5BF9;&#x8C61; &#x548C; &#x6307;&#x9488;</p>
-<pre><code class="lang-c++">  string s //&#x5185;&#x5B58;&#x4E2D;&#x4F1A;&#x521B;&#x5EFA;&#x5E76;&#x4E14;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;
+<pre class="language-"><code class="lang-c++">  string s //&#x5185;&#x5B58;&#x4E2D;&#x4F1A;&#x521B;&#x5EFA;&#x5E76;&#x4E14;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;
   string *ps  //&#x53EA;&#x58F0;&#x660E;&#x4E86;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x4F1A;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5F00;&#x8F9F;&#x4E00;&#x5757;&#x7A7A;&#x95F4;
 </code></pre>
 </li>
@@ -408,7 +412,7 @@ test dtor
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"储备知识","level":"2.2","depth":1,"next":{"title":"Chapter1_综述","level":"3.1","depth":1,"path":"Computer Organization/Chapter1/Chapter1.md","ref":"./Computer Organization/Chapter1/Chapter1.md","articles":[]},"previous":{"title":"指北","level":"2.1","depth":1,"path":"OOP/summary.md","ref":"./OOP/summary.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","alerts"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/object.md","mtime":"2020-08-29T12:30:52.257Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-29T15:32:08.620Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"储备知识","level":"2.2","depth":1,"next":{"title":"Chapter1_综述","level":"3.1","depth":1,"path":"Computer Organization/Chapter1/Chapter1.md","ref":"./Computer Organization/Chapter1/Chapter1.md","articles":[]},"previous":{"title":"指北","level":"2.1","depth":1,"path":"OOP/summary.md","ref":"./OOP/summary.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","alerts","prism","prism-themes"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"alerts":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/object.md","mtime":"2020-08-29T12:30:52.257Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-29T15:57:08.692Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

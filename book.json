@@ -10,13 +10,20 @@
         "tbfed-pagefooter",
         "advanced-emoji",
         "todo",
-        "alerts"
+        "alerts", 
+        "prism", 
+        "prism-themes"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
             "copyright": "Copyright",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        }
+        },
+        "prism": {
+            "css": [
+              "prismjs/themes/prism-solarizedlight.css"
+            ]
+          }
     }
 }

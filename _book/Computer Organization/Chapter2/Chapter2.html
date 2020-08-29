@@ -33,6 +33,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
                 
             
@@ -257,10 +261,10 @@
 <p>&#x6240;&#x6709;mips&#x6307;&#x4EE4;&#x90FD;&#x662F;&#x5B9A;&#x957F;&#x7684;&#x7ED3;&#x6784;</p>
 <h4 id="&#x51B3;&#x7B56;&#x6307;&#x4EE4;&#x8F6C;&#x79FB;&#x6307;&#x4EE4;">&#x51B3;&#x7B56;&#x6307;&#x4EE4;/&#x8F6C;&#x79FB;&#x6307;&#x4EE4;</h4>
 <p>&#x4E3E;&#x4F8B;&#xFF1A;while&#x6307;&#x4EE4;</p>
-<pre><code class="lang-c">while(save[i] == k){
-i = i+j;}
+<pre class="language-"><code class="lang-c"><span class="token keyword">while</span><span class="token punctuation">(</span>save<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> k<span class="token punctuation">)</span><span class="token punctuation">{</span>
+i <span class="token operator">=</span> i<span class="token operator">+</span>j<span class="token punctuation">;</span><span class="token punctuation">}</span>
 </code></pre>
-<pre><code class="lang-asm">Loop:    add $t1,$t3,$s3        #temp reg $t1 = 2*i
+<pre class="language-"><code class="lang-asm">Loop:    add $t1,$t3,$s3        #temp reg $t1 = 2*i
         add $t1,$t1,$t1        #temp reg $t1 = 4*i
         add $t1,$t1,$s6        #$t1 = address of save[i]
         lw $t0,0($t1)        #temp reg $t0 = save[i]
@@ -274,12 +278,12 @@ Exit:    ...
 <p>slt $t0,$s3,$s4    #$t0 = 1 if $t3&lt;$t4</p>
 <h4 id="case-swith&#x6307;&#x4EE4;">case swith&#x6307;&#x4EE4;</h4>
 <p>&#x6839;&#x636E;&#x5730;&#x5740;&#x8DF3;&#x8F6C;</p>
-<pre><code class="lang-c">switch(k){
-    case 0: f = i+j;break;
-    case 1: f = g+h;break;
-    case 2: f = g-h;break;
-    case 3: f = i-j;break;
-}
+<pre class="language-"><code class="lang-c"><span class="token keyword">switch</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span> f <span class="token operator">=</span> i<span class="token operator">+</span>j<span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span> f <span class="token operator">=</span> g<span class="token operator">+</span>h<span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span> f <span class="token operator">=</span> g<span class="token operator">-</span>h<span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span> f <span class="token operator">=</span> i<span class="token operator">-</span>j<span class="token punctuation">;</span><span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>k&#x53D6; 0-3&#xFF0C;t4&#x4E2D;&#x5B58;&#x50A8;&#x57FA;&#x5730;&#x5740;&#xFF0C;&#x8BE5;&#x5904;&#x5B58;&#x653E;&#x5BF9;&#x5E94;&#x4EE3;&#x7801;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5229;&#x7528;jr&#x6307;&#x4EE4;&#x8DF3;&#x8F6C;&#x5230;&#x5BC4;&#x5B58;&#x5668;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x5730;&#x5740;&#x4E2D;&#x53BB;&#x3002;</p>
 <p>&#x57FA;&#x672C;&#x4EE3;&#x7801;&#x5757;&#xFF1A;</p>
@@ -312,7 +316,7 @@ Exit:    ...
 <p>Branch&#x65F6;PC = PC+4+Branch address</p>
 <p>&#x6240;&#x4EE5;branch&#x6240;&#x652F;&#x6301;&#x7684;&#x5730;&#x5740;&#x5F88;&#x77ED;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;16&#x4F4D;&#x600E;&#x4E48;&#x529E;&#xFF1F;</p>
 <p>branching far away:&#x901A;&#x8FC7;j&#x642D;&#x914D;&#x6765;&#x5B9E;&#x73B0;</p>
-<pre><code class="lang-asm">beq $s0,$s1,L1
+<pre class="language-"><code class="lang-asm">beq $s0,$s1,L1
 
 --&gt;Rewrite
 
@@ -352,7 +356,7 @@ L2:
 <p>&#x4E09;&#x6B65;&#xFF1A;1.&#x4EE3;&#x7801;&#x548C;&#x6570;&#x636E;&#x6A21;&#x5757;&#x6309;&#x7B26;&#x53F7;&#x7279;&#x5F81;&#x653E;&#x5165;&#x5185;&#x5B58;&#x3002; 2.&#x51B3;&#x5B9A;&#x6570;&#x636E;&#x548C;&#x6307;&#x4EE4;&#x6807;&#x8BB0;&#x5730;&#x5740;&#x3002; 3.&#x4FEE;&#x6B63;&#x5185;&#x90E8;&#x548C;&#x5916;&#x90E8;&#x5F15;&#x7528;&#x3002;</p>
 <p>&#x5F53;&#x94FE;&#x63A5;&#x5668;&#x5C06;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x653E;&#x8FDB;&#x5185;&#x5B58;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x7EDD;&#x5BF9;&#x5F15;&#x7528;&#x90FD;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x5B9A;&#x4F4D;&#xFF0C;&#x4EE5;&#x53CD;&#x6620;&#x51FA;&#x5B83;&#x7684;&#x771F;&#x5B9E;&#x5730;&#x5740;&#x3002;</p>
 <h4 id="&#x6307;&#x9488;">&#x6307;&#x9488;</h4>
-<pre><code class="lang-asm">move $t0,$a0  #&#x6C42;&#x51FA;&#x9996;&#x5730;&#x5740;
+<pre class="language-"><code class="lang-asm">move $t0,$a0  #&#x6C42;&#x51FA;&#x9996;&#x5730;&#x5740;
 sll $t1,$a1,2
 add $t2,$a0,$t1 #&#x6C42;&#x51FA;&#x672B;&#x5730;&#x5740;
 loop: sw $zero,0($t0)
@@ -407,7 +411,7 @@ loop: sw $zero,0($t0)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chapter2_MIPS","level":"3.2","depth":1,"next":{"title":"Chapter3_Arithmetic","level":"3.3","depth":1,"path":"Computer Organization/Chapter3/Chapter3.md","ref":"./Computer Organization/Chapter3/Chapter3.md","articles":[]},"previous":{"title":"Chapter1_综述","level":"3.1","depth":1,"path":"Computer Organization/Chapter1/Chapter1.md","ref":"./Computer Organization/Chapter1/Chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","alerts"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"Computer Organization/Chapter2/Chapter2.md","mtime":"2020-05-20T09:20:16.736Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-29T15:32:08.620Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Chapter2_MIPS","level":"3.2","depth":1,"next":{"title":"Chapter3_Arithmetic","level":"3.3","depth":1,"path":"Computer Organization/Chapter3/Chapter3.md","ref":"./Computer Organization/Chapter3/Chapter3.md","articles":[]},"previous":{"title":"Chapter1_综述","level":"3.1","depth":1,"path":"Computer Organization/Chapter1/Chapter1.md","ref":"./Computer Organization/Chapter1/Chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","alerts","prism","prism-themes"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"alerts":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"Computer Organization/Chapter2/Chapter2.md","mtime":"2020-05-20T09:20:16.736Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-29T15:57:08.692Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
