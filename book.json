@@ -7,7 +7,10 @@
     "plugins": [
         "emphasize",
         "-highlight",
-        "tbfed-pagefooter"
+        "tbfed-pagefooter",
+        "advanced-emoji",
+        "todo",
+        "alerts"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
