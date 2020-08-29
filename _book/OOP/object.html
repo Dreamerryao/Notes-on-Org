@@ -29,7 +29,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
                 
             
                 
@@ -67,7 +67,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Computer Organization/Chapter1/Chapter1.html" />
+    <link rel="next" href="reference.html" />
     
     
     <link rel="prev" href="summary.html" />
@@ -138,6 +138,19 @@
             
                     
                     储备知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    引用
             
                 </a>
             
@@ -238,51 +251,51 @@
                                 
                                 <h1 id="&#x50A8;&#x5907;&#x77E5;&#x8BC6;">&#x50A8;&#x5907;&#x77E5;&#x8BC6;</h1>
 <h2 id="c-&#x50A8;&#x5907;&#x77E5;&#x8BC6;-&#x8DF3;&#x8DF3;&#x8DF3;">C++ &#x50A8;&#x5907;&#x77E5;&#x8BC6; (&#x8DF3;&#x8DF3;&#x8DF3;</h2>
-<pre class="language-"><code class="lang-c++">#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iostream</span><span class="token punctuation">&gt;</span></span>
-using namespace std; //&#x547D;&#x540D;&#x7A7A;&#x95F4;
-int main(){
-    cout&lt;&lt;&quot;OOP zhuaba&quot;&lt;&lt;endl;
-    return 0;
-}
+<pre class="language-"><code class="lang-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span> <span class="token comment">//&#x547D;&#x540D;&#x7A7A;&#x95F4;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    cout<span class="token operator">&lt;&lt;</span><span class="token string">&quot;OOP zhuaba&quot;</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<pre class="language-"><code class="lang-c++">#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iostream</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fstream</span><span class="token punctuation">&gt;</span></span>
-using namespace std;
-int main(){
-    //string
-    string str;
-    str = &quot;Hello&quot;;
-    string str1(str+&quot;asdhiad&quot;);
-    cout&lt;&lt;str1&lt;&lt;endl;
-    string str3 = str1.substr(0,11);
-    //char char1[20];
-    //char char2[20] = &quot;jsad&quot;;
-    //char1 = char2;
-    //error: char1&#x4E0D;&#x662F;&#x53EF;&#x4FEE;&#x6539;&#x7684;&#x5DE6;&#x503C;
+<pre class="language-"><code class="lang-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;fstream&gt;</span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//string</span>
+    string str<span class="token punctuation">;</span>
+    str <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+    string <span class="token function">str1</span><span class="token punctuation">(</span>str<span class="token operator">+</span><span class="token string">&quot;asdhiad&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>str1<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    string str3 <span class="token operator">=</span> str1<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//char char1[20];</span>
+    <span class="token comment">//char char2[20] = &quot;jsad&quot;;</span>
+    <span class="token comment">//char1 = char2;</span>
+    <span class="token comment">//error: char1&#x4E0D;&#x662F;&#x53EF;&#x4FEE;&#x6539;&#x7684;&#x5DE6;&#x503C;</span>
 
 
-    //file I/O
-    ofstream file1(&quot;.//test.txt&quot;);
-    file1&lt;&lt;str3&lt;&lt;endl;
-    ifstream file2(&quot;.//test.txt&quot;);
-    file2&gt;&gt;str;
-    cout&lt;&lt;str&lt;&lt;endl;
+    <span class="token comment">//file I/O</span>
+    ofstream <span class="token function">file1</span><span class="token punctuation">(</span><span class="token string">&quot;.//test.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    file1<span class="token operator">&lt;&lt;</span>str3<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    ifstream <span class="token function">file2</span><span class="token punctuation">(</span><span class="token string">&quot;.//test.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    file2<span class="token operator">&gt;&gt;</span>str<span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span>str<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
 
-    //pointer to Objects
-    string s = &quot;Hello&quot;;
-    string *ps = <span class="token entity named-entity" title="&amp;s;">&amp;s;</span>
-    cout&lt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&quot;string</span> <span class="token attr-name">address&quot;&lt;&lt;ps&lt;&lt;endl;</span>
-    <span class="token attr-name">cout&lt;&lt;&quot;string</span> <span class="token attr-name">length&quot;&lt;&lt;</span> <span class="token attr-name">ps-</span><span class="token punctuation">&gt;</span></span>length()&lt;&lt;endl;
+    <span class="token comment">//pointer to Objects</span>
+    string s <span class="token operator">=</span> <span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+    string <span class="token operator">*</span>ps <span class="token operator">=</span> <span class="token operator">&amp;</span>s<span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span><span class="token string">&quot;string address&quot;</span><span class="token operator">&lt;&lt;</span>ps<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    cout<span class="token operator">&lt;&lt;</span><span class="token string">&quot;string length&quot;</span><span class="token operator">&lt;&lt;</span> ps<span class="token operator">-&gt;</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
 
 
-    return 0;
-}
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h2 id="c-&#x52A8;&#x6001;&#x5206;&#x914D;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x7B26;-new--delete">C++ &#x52A8;&#x6001;&#x5206;&#x914D;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x7B26; new &amp;&amp; delete</h2>
 <p><img align="absmiddle" alt=":star:" class="emoji" src="../gitbook/gitbook-plugin-advanced-emoji/emojis/star.png" title=":star:"> &#x6307;&#x9488;&#x662F;&#x8BBF;&#x95EE;&#x8BE5;&#x79CD;&#x65B9;&#x6CD5;&#x5206;&#x914D;&#x51FA;&#x7684;&#x5185;&#x5B58;&#x7684;&#x552F;&#x4E00;&#x65B9;&#x5F0F;</p>
-<pre class="language-"><code class="lang-c++">int * pint = new int[10];
-delete [] pint;
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> <span class="token operator">*</span> pint <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">delete</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> pint<span class="token punctuation">;</span>
 </code></pre>
 <h3 id="new-vs-malloc">new VS malloc</h3>
 <p>new&#x4F1A;&#x5BF9;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;malloc&#x4E0D;&#x4F1A;</p>
@@ -291,23 +304,23 @@ delete [] pint;
 <h3 id="tips">Tips</h3>
 <ul>
 <li><p>&#x4E0D;&#x8981;delete&#x540C;&#x4E00;&#x5757;&#x5185;&#x5B58;&#x4E24;&#x6B21;</p>
-<pre class="language-"><code class="lang-c++">#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iostream</span><span class="token punctuation">&gt;</span></span>
-#include <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>string</span><span class="token punctuation">&gt;</span></span>
-using namespace std;
-class test{
-    private:
-    int ohh;
-    public:
-    test(){ cout&lt;&lt;&quot;test ctor&quot;&lt;&lt;endl;}
-    ~test(){cout&lt;&lt;&quot;test dtor&quot;&lt;&lt;endl;}
-};
+<pre class="language-"><code class="lang-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">test</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> ohh<span class="token punctuation">;</span>
+    <span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> cout<span class="token operator">&lt;&lt;</span><span class="token string">&quot;test ctor&quot;</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token punctuation">}</span>
+    <span class="token operator">~</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>cout<span class="token operator">&lt;&lt;</span><span class="token string">&quot;test dtor&quot;</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-int main(){
-    test* ptest = new test;
-    delete ptest;
-    delete ptest;
-    return 0;
-}
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    test<span class="token operator">*</span> ptest <span class="token operator">=</span> <span class="token keyword">new</span> test<span class="token punctuation">;</span>
+    <span class="token keyword">delete</span> ptest<span class="token punctuation">;</span>
+    <span class="token keyword">delete</span> ptest<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>&#x7A0B;&#x5E8F;&#x4F1A;&#x66B4;&#x6BD9;,output</p>
 <pre class="language-"><code>test ctor
@@ -351,24 +364,24 @@ test dtor
 <h2 id="tips"><img align="absmiddle" alt=":star:" class="emoji" src="../gitbook/gitbook-plugin-advanced-emoji/emojis/star.png" title=":star:"> Tips</h2>
 <ul>
 <li><p>&#x5173;&#x4E8E;&#x65E5;&#x5E38;&#x5F04;&#x6DF7;&#x7684; &gt;&gt;  &lt;&lt;</p>
-<pre class="language-"><code class="lang-c++">  int number;
-  std::cin&gt;&gt;number;// &#x5C16;&#x62EC;&#x53F7;&#x6307;&#x5230;&#x54EA;&#x91CC;&#x5C31;&#x8868;&#x793A;&#x5199;&#x5230;&#x54EA;
-  std::cout&lt;&lt;number&lt;&lt;std::endl;
+<pre class="language-"><code class="lang-cpp">  <span class="token keyword">int</span> number<span class="token punctuation">;</span>
+  std<span class="token operator">::</span>cin<span class="token operator">&gt;&gt;</span>number<span class="token punctuation">;</span><span class="token comment">// &#x5C16;&#x62EC;&#x53F7;&#x6307;&#x5230;&#x54EA;&#x91CC;&#x5C31;&#x8868;&#x793A;&#x5199;&#x5230;&#x54EA;</span>
+  std<span class="token operator">::</span>cout<span class="token operator">&lt;&lt;</span>number<span class="token operator">&lt;&lt;</span>std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
 </code></pre>
 </li>
 <li><p>&#x5206;&#x6E05;&#x8D4B;&#x503C;(Assignment)&#x548C;&#x6784;&#x9020;(Ctor)</p>
-<pre class="language-"><code class="lang-c++">  str3 = str1+str2; //&#x8D4B;&#x503C;
-  str3(str1+str2);//&#x6784;&#x9020;
+<pre class="language-"><code class="lang-cpp">  str3 <span class="token operator">=</span> str1<span class="token operator">+</span>str2<span class="token punctuation">;</span> <span class="token comment">//&#x8D4B;&#x503C;</span>
+  <span class="token function">str3</span><span class="token punctuation">(</span>str1<span class="token operator">+</span>str2<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x6784;&#x9020;</span>
 </code></pre>
 </li>
 <li><p>&#x5BF9;&#x8C61; &#x548C; &#x6307;&#x9488;</p>
-<pre class="language-"><code class="lang-c++">  string s //&#x5185;&#x5B58;&#x4E2D;&#x4F1A;&#x521B;&#x5EFA;&#x5E76;&#x4E14;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;
-  string *ps  //&#x53EA;&#x58F0;&#x660E;&#x4E86;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x4F1A;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5F00;&#x8F9F;&#x4E00;&#x5757;&#x7A7A;&#x95F4;
+<pre class="language-"><code class="lang-cpp">  string s <span class="token comment">//&#x5185;&#x5B58;&#x4E2D;&#x4F1A;&#x521B;&#x5EFA;&#x5E76;&#x4E14;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+  string <span class="token operator">*</span>ps  <span class="token comment">//&#x53EA;&#x58F0;&#x660E;&#x4E86;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x4F1A;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5F00;&#x8F9F;&#x4E00;&#x5757;&#x7A7A;&#x95F4;</span>
 </code></pre>
 </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-08-29 20:30:52
+2020-08-30 00:17:44
 </span></footer>
                                 
                                 </section>
@@ -401,7 +414,7 @@ test dtor
                 </a>
                 
                 
-                <a href="../Computer Organization/Chapter1/Chapter1.html" class="navigation navigation-next " aria-label="Next page: Chapter1_综述">
+                <a href="reference.html" class="navigation navigation-next " aria-label="Next page: 引用">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -412,7 +425,7 @@ test dtor
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"储备知识","level":"2.2","depth":1,"next":{"title":"Chapter1_综述","level":"3.1","depth":1,"path":"Computer Organization/Chapter1/Chapter1.md","ref":"./Computer Organization/Chapter1/Chapter1.md","articles":[]},"previous":{"title":"指北","level":"2.1","depth":1,"path":"OOP/summary.md","ref":"./OOP/summary.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","alerts","prism","prism-themes"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"alerts":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/object.md","mtime":"2020-08-29T12:30:52.257Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-29T15:57:08.692Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"储备知识","level":"2.2","depth":1,"next":{"title":"引用","level":"2.3","depth":1,"path":"OOP/reference.md","ref":"./OOP/reference.md","articles":[]},"previous":{"title":"指北","level":"2.1","depth":1,"path":"OOP/summary.md","ref":"./OOP/summary.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","flexible-alerts","prism","prism-themes"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"ignore":["asm"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"flexible-alerts":{"style":"flat","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/object.md","mtime":"2020-08-29T16:17:44.629Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-29T17:12:34.871Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -422,7 +435,7 @@ test dtor
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
         
     
         

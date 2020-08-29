@@ -4,7 +4,7 @@
 
 ## C++ 储备知识 (跳跳跳
 
-``` c++
+``` cpp
 #include <iostream>
 using namespace std; //命名空间
 int main(){
@@ -15,7 +15,7 @@ int main(){
 
 
 
-``` c++
+``` cpp
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -55,7 +55,7 @@ int main(){
 
 :star: 指针是访问该种方法分配出的内存的唯一方式
 
-``` c++
+``` cpp
 int * pint = new int[10];
 delete [] pint;
 ```
@@ -74,7 +74,7 @@ new会对对象进行初始化操作，而malloc不会
 
 - 不要delete同一块内存两次
 
-  ``` c++
+  ``` cpp
   #include <iostream>
   #include <string>
   using namespace std;
@@ -144,7 +144,7 @@ new会对对象进行初始化操作，而malloc不会
 
 - 关于日常弄混的 >>  <<
 
-    ``` c++
+    ``` cpp
     int number;
     std::cin>>number;// 尖括号指到哪里就表示写到哪
     std::cout<<number<<std::endl;
@@ -152,14 +152,14 @@ new会对对象进行初始化操作，而malloc不会
     
 - 分清赋值(Assignment)和构造(Ctor)
 
-    ``` c++
+    ``` cpp
     str3 = str1+str2; //赋值
     str3(str1+str2);//构造
     ```
 
 - 对象 和 指针
 
-    ``` c++
+    ``` cpp
     string s //内存中会创建并且初始化，调用构造函数
     string *ps  //只声明了一个指针，没有初始化操作，不会在内存中开辟一块空间
     ```
