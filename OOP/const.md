@@ -99,7 +99,7 @@ int main()
 
 ### 补充条款(
 
-关于c++绕来绕去的类型检查:confused:
+:confused::confused: 关于c++绕来绕去的类型检查 
 
 >[!TIP|style:flat]
 >可以把一个非const对象地址赋值给const指针，但是声明了一个const对象，不能把它的地址赋值给普通的指针，因为这样做可能会通过被赋值的指针改变这个对象的值。

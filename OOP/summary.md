@@ -29,8 +29,8 @@
 ### 三大特性
 
 - [x] 封装
-- [ ] 继承
-- [ ] 多态
+- [x] 继承
+- [x] 多态
 
 ### C++ improvements
 
@@ -39,14 +39,14 @@
 - [x] Data Abstraction
 - [x] Access control
 - [x] Initialization & Cleanup
-- [ ] Function overloading
+- [x] Function overloading
 - [x] Streams for I/O
 - [x] constant
 - [ ] Name Control
-- [ ] Inline function
+- [x] Inline function
 - [x] references
 - [ ] Operator overloading
-- [ ] More safe and powerful memory management
+- [x] More safe and powerful memory management
 - [x] Support for OOP
 - [ ] templates
 - [ ] exception handling
@@ -62,9 +62,10 @@
 
 ### TODO
 
-- function overloading (ppt 4)
 - STL (ppt 4)
-
+- 多重继承 (ppt 7)
+- static in class (ppt 7)
+- namespace (ppt 7)
 
 
 
