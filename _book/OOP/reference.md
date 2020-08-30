@@ -86,7 +86,7 @@ int main(){
     int &h = y;
     int *p = &h;
     cout<<p<<endl;
-     f(p);
+    f(p);
     cout<<p<<endl;
    
     return 0;
@@ -117,13 +117,15 @@ void f(int &){
 void g(const int &){
 }
 int main(){
-    //f(1);//Error invalid initialization of non-const reference of type 'int&' from an rvalue of type 'int'
+    //f(1);//Error invalid initialization of non-const 
+    //reference of type 'int&' from an rvalue of type 'int'
     g(1);
     return 0;
 }
 ```
 
->:star:f(1)在调用时发生以下动作: 1.为int分配一个存储单元，同时将其值赋值为1，并产生一个地址和引用绑定。而存储的内容一定是const,因为**改变它没有任何意义**。
+> [!TIP|style:flat]
+> f(1)在调用时发生以下动作: 1.为int分配一个存储单元，同时将其值赋值为1，并产生一个地址和引用绑定。而存储的内容一定是const,因为**改变它没有任何意义**。
 >
 >因此，编译器对于所有的临时对象，都会认为他们是不可存取的，因为我们在传入参数后，这个临时对象就失去了作用，因此不是const引用就会报错。
 

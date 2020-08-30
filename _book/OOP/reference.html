@@ -67,7 +67,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Computer Organization/Chapter1/Chapter1.html" />
+    <link rel="next" href="const.html" />
     
     
     <link rel="prev" href="object.html" />
@@ -151,6 +151,19 @@
             
                     
                     引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="const.html">
+            
+                <a href="const.html">
+            
+                    
+                    const
             
                 </a>
             
@@ -322,7 +335,7 @@
     <span class="token keyword">int</span> <span class="token operator">&amp;</span>h <span class="token operator">=</span> y<span class="token punctuation">;</span>
     <span class="token keyword">int</span> <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token operator">&amp;</span>h<span class="token punctuation">;</span>
     cout<span class="token operator">&lt;&lt;</span>p<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-     <span class="token function">f</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">f</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
     cout<span class="token operator">&lt;&lt;</span>p<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
@@ -343,18 +356,20 @@
 <span class="token keyword">void</span> <span class="token function">g</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">&amp;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token comment">//f(1);//Error invalid initialization of non-const reference of type &apos;int&amp;&apos; from an rvalue of type &apos;int&apos;</span>
+    <span class="token comment">//f(1);//Error invalid initialization of non-const </span>
+    <span class="token comment">//reference of type &apos;int&amp;&apos; from an rvalue of type &apos;int&apos;</span>
     <span class="token function">g</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <blockquote>
-<p>:star:f(1)&#x5728;&#x8C03;&#x7528;&#x65F6;&#x53D1;&#x751F;&#x4EE5;&#x4E0B;&#x52A8;&#x4F5C;: 1.&#x4E3A;int&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5B58;&#x50A8;&#x5355;&#x5143;&#xFF0C;&#x540C;&#x65F6;&#x5C06;&#x5176;&#x503C;&#x8D4B;&#x503C;&#x4E3A;1&#xFF0C;&#x5E76;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x548C;&#x5F15;&#x7528;&#x7ED1;&#x5B9A;&#x3002;&#x800C;&#x5B58;&#x50A8;&#x7684;&#x5185;&#x5BB9;&#x4E00;&#x5B9A;&#x662F;const,&#x56E0;&#x4E3A;<strong>&#x6539;&#x53D8;&#x5B83;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x610F;&#x4E49;</strong>&#x3002;</p>
+<p>[!TIP|style:flat]
+f(1)&#x5728;&#x8C03;&#x7528;&#x65F6;&#x53D1;&#x751F;&#x4EE5;&#x4E0B;&#x52A8;&#x4F5C;: 1.&#x4E3A;int&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5B58;&#x50A8;&#x5355;&#x5143;&#xFF0C;&#x540C;&#x65F6;&#x5C06;&#x5176;&#x503C;&#x8D4B;&#x503C;&#x4E3A;1&#xFF0C;&#x5E76;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x548C;&#x5F15;&#x7528;&#x7ED1;&#x5B9A;&#x3002;&#x800C;&#x5B58;&#x50A8;&#x7684;&#x5185;&#x5BB9;&#x4E00;&#x5B9A;&#x662F;const,&#x56E0;&#x4E3A;<strong>&#x6539;&#x53D8;&#x5B83;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x610F;&#x4E49;</strong>&#x3002;</p>
 <p>&#x56E0;&#x6B64;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x7684;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;&#xFF0C;&#x90FD;&#x4F1A;&#x8BA4;&#x4E3A;&#x4ED6;&#x4EEC;&#x662F;&#x4E0D;&#x53EF;&#x5B58;&#x53D6;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5728;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E34;&#x65F6;&#x5BF9;&#x8C61;&#x5C31;&#x5931;&#x53BB;&#x4E86;&#x4F5C;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x662F;const&#x5F15;&#x7528;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
 </blockquote>
 <p>&#x56E0;&#x6B64;&#xFF0C;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x9519;&#x8BEF;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;const &#x6765;&#x89E3;&#x51B3;,&#x5F53;&#x7136;&#x524D;&#x63D0;&#x662F;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x5E76;&#x4E0D;&#x4F1A;&#x5BF9;&#x5BF9;&#x8C61;&#x4EA7;&#x751F;&#x66F4;&#x6539;&#x3002; </p>
 <footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-08-30 01:12:05
+2020-08-30 13:42:57
 </span></footer>
                                 
                                 </section>
@@ -387,7 +402,7 @@
                 </a>
                 
                 
-                <a href="../Computer Organization/Chapter1/Chapter1.html" class="navigation navigation-next " aria-label="Next page: Chapter1_综述">
+                <a href="const.html" class="navigation navigation-next " aria-label="Next page: const">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -398,7 +413,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"引用","level":"2.3","depth":1,"next":{"title":"Chapter1_综述","level":"3.1","depth":1,"path":"Computer Organization/Chapter1/Chapter1.md","ref":"./Computer Organization/Chapter1/Chapter1.md","articles":[]},"previous":{"title":"储备知识","level":"2.2","depth":1,"path":"OOP/object.md","ref":"./OOP/object.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","flexible-alerts","prism","prism-themes"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"ignore":["asm"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"flexible-alerts":{"style":"flat","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/reference.md","mtime":"2020-08-29T17:12:05.718Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-29T17:12:34.871Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"引用","level":"2.3","depth":1,"next":{"title":"const","level":"2.4","depth":1,"path":"OOP/const.md","ref":"./OOP/const.md","articles":[]},"previous":{"title":"储备知识","level":"2.2","depth":1,"path":"OOP/object.md","ref":"./OOP/object.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","flexible-alerts","prism","prism-themes"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"ignore":["asm"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"flexible-alerts":{"style":"flat","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/reference.md","mtime":"2020-08-30T05:42:57.434Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-30T05:44:07.759Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
