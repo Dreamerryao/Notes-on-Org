@@ -1,0 +1,544 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>重载 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Computer Organization/Chapter1/Chapter1.html" />
+    
+    
+    <link rel="prev" href="polymorphism.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">面向对象程序设计</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    指北
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="object.html">
+            
+                <a href="object.html">
+            
+                    
+                    储备知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="const.html">
+            
+                <a href="const.html">
+            
+                    
+                    const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="class.html">
+            
+                <a href="class.html">
+            
+                    
+                    封装&& ctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="inline.html">
+            
+                <a href="inline.html">
+            
+                    
+                    inline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="inheritance.html">
+            
+                <a href="inheritance.html">
+            
+                    
+                    继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="polymorphism.html">
+            
+                <a href="polymorphism.html">
+            
+                    
+                    多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9" data-path="overloading.html">
+            
+                <a href="overloading.html">
+            
+                    
+                    重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">计算机组成</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Computer Organization/Chapter1/Chapter1.html">
+            
+                <a href="../Computer Organization/Chapter1/Chapter1.html">
+            
+                    
+                    Chapter1_综述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../Computer Organization/Chapter2/Chapter2.html">
+            
+                <a href="../Computer Organization/Chapter2/Chapter2.html">
+            
+                    
+                    Chapter2_MIPS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Computer Organization/Chapter3/Chapter3.html">
+            
+                <a href="../Computer Organization/Chapter3/Chapter3.html">
+            
+                    
+                    Chapter3_Arithmetic
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >重载</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="overloading">Overloading</h1>
+<h2 id="&#x51FD;&#x6570;&#x91CD;&#x8F7D;">&#x51FD;&#x6570;&#x91CD;&#x8F7D;</h2>
+<p>C++&#x4E2D;&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x8FD4;&#x56DE;&#x503C;&#x91CD;&#x8F7D;</p>
+<p>&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x8FDB;&#x884C;&#x51FD;&#x6570;&#x91CD;&#x8F7D;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">char</span> c<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x51FD;&#x6570;&#x91CD;&#x8F7D;-vs-&#x9ED8;&#x8BA4;&#x53C2;&#x6570;">&#x51FD;&#x6570;&#x91CD;&#x8F7D; VS &#x9ED8;&#x8BA4;&#x53C2;&#x6570;</h3>
+<p>&#x9ED8;&#x8BA4;&#x53C2;&#x6570; &#x4ECE;&#x53F3;&#x5230;&#x5DE6;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x4E2D;&#x95F4;&#x641E;&#x4E00;&#x4E2A;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token keyword">int</span> m<span class="token punctuation">,</span><span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">,</span><span class="token keyword">int</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//illegal</span>
+</code></pre>
+<p>&#x53D1;&#x751F;&#x51B2;&#x7A81;&#xFF0C;&#x9009;&#x62E9;&#x91CD;&#x8F7D;&#x8FD8;&#x662F;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x5462;&#xFF1F;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x7ED9;&#x51FA;&#x4E0D;&#x660E;&#x786E;&#x7684;error</p>
+<h2 id="&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;">&#x8FD0;&#x7B97;&#x7B26;&#x91CD;&#x8F7D;</h2>
+<p>&#x5BF9;&#x8FD0;&#x7B97;&#x7B26;&#x8FDB;&#x884C;&#x91CD;&#x8F7D;&#x53EF;&#x4EE5;&#x4F7F;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#x53D8;&#x5F97;&#x66F4;&#x597D;</p>
+<h3 id="&#x4E0D;&#x5141;&#x8BB8;&#x8FDB;&#x884C;&#x91CD;&#x8F7D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;">&#x4E0D;&#x5141;&#x8BB8;&#x8FDB;&#x884C;&#x91CD;&#x8F7D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<ul>
+<li>&#x6210;&#x5458;&#x9009;&#x62E9;operator .</li>
+<li>&#x6210;&#x5458;&#x6307;&#x9488;&#x95F4;&#x63A5;&#x5F15;&#x7528; operator .*</li>
+<li>&#x4E09;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x8FD0;&#x7B97;&#x7B26; ?:</li>
+<li>&#x7C7B;&#x578B;&#x8F6C;&#x6362; cast&#x64CD;&#x4F5C;</li>
+<li>&#x4E0D;&#x80FD;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x8FD0;&#x7B97;&#x7B26;</li>
+<li>&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x4F18;&#x5148;&#x7EA7;</li>
+<li>&#x6CA1;&#x6709;&#x6C42;&#x5E42;&#x8FD0;&#x7B97;&#x7B26;</li>
+</ul>
+<h3 id="&#x91CD;&#x8F7D;&#x89C4;&#x5219;">&#x91CD;&#x8F7D;&#x89C4;&#x5219;</h3>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> String String<span class="token operator">::</span><span class="token keyword">operator</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">const</span> String<span class="token operator">&amp;</span> that<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4F5C;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x7F3A;&#x7701;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;this</p>
+<p>&#x5982;&#x679C;&#x4F5C;&#x4E3A;&#x5168;&#x5C40;&#x51FD;&#x6570;&#xFF0C;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x5C31;&#x90FD;&#x8981;&#x663E;&#x5F0F;&#x8868;&#x8FBE;&#x51FA;&#x6765;</p>
+</blockquote>
+<p>&#x4E3E;&#x4F8B;&#x5B50;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">class</span> <span class="token class-name">Integer</span> <span class="token punctuation">{</span> 
+<span class="token keyword">public</span><span class="token operator">:</span> 
+  <span class="token function">Integer</span><span class="token punctuation">(</span> <span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">i</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> 
+  <span class="token keyword">const</span> Integer <span class="token keyword">operator</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token keyword">const</span> Integer<span class="token operator">&amp;</span> n<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">{</span> 
+      <span class="token keyword">return</span> <span class="token function">Integer</span><span class="token punctuation">(</span>i <span class="token operator">+</span> n<span class="token punctuation">.</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+  <span class="token punctuation">}</span> 
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>  
+<span class="token keyword">private</span><span class="token operator">:</span> 
+   <span class="token keyword">int</span> i<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6267;&#x884C; x+y &#x8C03;&#x7528;&#x7684;&#x662F; x.operator+(y);  y&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x8FDB;&#x6765;</p>
+<pre class="language-"><code class="lang-cpp">z <span class="token operator">=</span> <span class="token number">3</span><span class="token operator">+</span>y<span class="token punctuation">;</span><span class="token comment">//error</span>
+</code></pre>
+<blockquote>
+<p>&#x56E0;&#x4E3A;3&#x662F;&#x5185;&#x5EFA;&#x7C7B;&#x578B;&#xFF0C;&#x6CA1;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x7684;operator+,&#x56E0;&#x6B64;&#x8FD9;&#x6837;&#x64CD;&#x4F5C;&#x662F;&#x4E0D;&#x88AB;&#x5141;&#x8BB8;&#x7684;</p>
+<p>&#x5982;&#x679C;&#x4F5C;&#x4E3A;&#x5168;&#x5C40;&#x51FD;&#x6570;&#x6765;overload&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;friend&#x53CB;&#x5143;&#x58F0;&#x660E;</p>
+<p>&#x4F46;&#x5168;&#x5C40;&#x51FD;&#x6570;&#x5141;&#x8BB8; z = 3+y;&#x56E0;&#x4E3A;&#x4F1A;&#x5C06;3&#x6784;&#x9020;&#x6210;Integer&#x5BF9;&#x8C61;</p>
+<p>[!TIP|style:flat|label:&#x6210;&#x5458;&#x51FD;&#x6570;]</p>
+<p>= () [] -&gt; -&gt;*&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x91CD;&#x8F7D;&#x5FC5;&#x987B;&#x4F5C;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x5355;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;&#x6700;&#x597D;&#x4E5F;&#x4F5C;&#x4E3A;&#x6210;&#x5458;&#x51FD;&#x6570;</p>
+</blockquote>
+<p>.</p>
+<blockquote>
+<p>[!TIP|style:flat|label:&#x5173;&#x4E8E;&#x8FD4;&#x56DE;&#x503C;]</p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x4E3A;const &#x9632;&#x6B62;&#x8FD4;&#x56DE;&#x503C;&#x6210;&#x4E3A;&#x5DE6;&#x503C; &#x9020;&#x6210; x+y = z&#x88AB;&#x5141;&#x8BB8;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x8FD9;&#x6837;&#x662F;&#x6BEB;&#x65E0;&#x610F;&#x4E49;&#x7684;</p>
+</blockquote>
+<h3 id="&#x7279;&#x6B8A;&#x7684;&#x91CD;&#x8F7D;">&#x7279;&#x6B8A;&#x7684;&#x91CD;&#x8F7D;</h3>
+<p><strong>++&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x524D;&#x7F00;&#x548C;&#x540E;&#x7F00;</strong></p>
+<p>&#x5F53;&#x7F16;&#x8BD1;&#x5668;&#x770B;&#x5230; ++a&#x65F6;&#x4F1A;&#x8C03;&#x7528; operator++(a),&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5F15;&#x7528;</p>
+<p>&#x770B;&#x5230;a++&#x65F6; &#x4F1A;&#x8C03;&#x7528; operator++(a,int),&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5BF9;&#x8C61;</p>
+<p><strong>operator[]&#x7684;&#x91CD;&#x8F7D;</strong></p>
+<p>&#x5FC5;&#x987B;&#x662F;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x56E0;&#x4E3A;&#x5B83;&#x4F5C;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x5E94;&#x8BE5;&#x7C7B;&#x4F3C;&#x6570;&#x7EC4;&#x4E00;&#x6837;&#x64CD;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x8FD0;&#x7B97;&#x7B26;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x6210;&#x4E3A;&#x5DE6;&#x503C;&#x3002;</p>
+<p><strong>operator = &#x7684;&#x91CD;&#x8F7D;</strong></p>
+<ul>
+<li><p>&#x5728;&#x4F7F;&#x7528; = &#x65F6;&#x4E5F;&#x4F1A;&#x5F15;&#x8D77;&#x62F7;&#x8D1D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;explicit&#x5173;&#x952E;&#x5B57;&#x6765;&#x8868;&#x793A;&#x8BE5;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x7528;&#x4F5C;&#x9690;&#x6027;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x4F7F;&#x7528;=&#x4F1A;&#x62A5;&#x9519;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">class</span> <span class="token class-name">A</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token function">A</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token function">A</span><span class="token punctuation">(</span><span class="token keyword">char</span> c<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    A a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token comment">//A(1)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x6309;&#x6210;&#x5458;&#x8D4B;&#x503C;</p>
+</li>
+<li><p>&#x8FD4;&#x56DE;&#x503C;&#x9700;&#x8981;&#x662F;reference &#x56E0;&#x4E3A;&#x8981;&#x8003;&#x8651; A=B=C&#xFF0C;B=C&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x8FD8;&#x8981;&#x8FDB;&#x884C;&#x7B49;&#x4E8E;&#x64CD;&#x4F5C;</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x5C06;operator = &#x58F0;&#x660E;&#x4E3A;private,&#x5C31;&#x8868;&#x793A;&#x4E0D;&#x5141;&#x8BB8;&#x522B;&#x4EBA;&#x8FDB;&#x884C;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;</p>
+</li>
+</ul>
+<p><strong>conversion operator&#x7684;&#x91CD;&#x8F7D;</strong></p>
+<ul>
+<li>&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;</li>
+<li>&#x5C06;&#x8981;&#x8F6C;&#x6362;&#x6210;&#x7684;&#x7C7B;&#x578B;&#x8868;&#x8FBE;&#x51FA;&#x6765;</li>
+<li>&#x53EF;&#x4EE5;&#x4E0D;&#x5199;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;</li>
+<li>&#x4F1A;&#x5728;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#x81EA;&#x52A8;&#x8C03;&#x7528;</li>
+<li>&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;</li>
+</ul>
+<p>&#x6240;&#x4EE5;&#x5C06;A&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4E3A;B&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;:</p>
+<ol>
+<li>&#x5728;B&#x7C7B;&#x578B;&#x4E2D;&#x58F0;&#x660E;&#x6784;&#x9020;&#x51FD;&#x6570;B(A)</li>
+<li>&#x5728;A&#x7C7B;&#x578B;&#x4E2D;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x7B26;B()</li>
+</ol>
+<p>&#x4E24;&#x4E2A;&#x90FD;&#x6709;&#x5C31;&#x4F1A;&#x4EA7;&#x751F;&#x51B2;&#x7A81;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;: &#x53EF;&#x4EE5;&#x4F7F;&#x7528;explicit&#x6765;&#x9632;&#x6B62;&#x9690;&#x6027;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</p>
+<p><strong>&#x7F16;&#x8BD1;&#x5668;&#x5BF9;&#x7C7B;&#x578B;&#x7684;&#x5339;&#x914D;&#x673A;&#x5236;</strong></p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x53BB;&#x627E;&#x5B8C;&#x5168;&#x5339;&#x914D;&#x7684;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x627E;&#x6D89;&#x53CA;&#x5230;&#x5185;&#x7F6E;&#x8F6C;&#x6362;&#x7684;&#x5339;&#x914D;</p>
+<p>&#x6700;&#x540E;&#x662F;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x8F6C;&#x6362;</p>
+<h3 id="&#x5185;&#x7F6E;&#x7684;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x4ECB;&#x7ECD;">&#x5185;&#x7F6E;&#x7684;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x4ECB;&#x7ECD;</h3>
+<ul>
+<li><p>static_cast<type>(expression)</type></p>
+<p>int b = static_cast<int>(a);</int></p>
+<p>&#x6CE8;&#x610F; const&#x5E38;&#x91CF;&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x8F6C;&#x6362;&#x6210;&#x975E;const &#x6709;&#x4E13;&#x95E8;&#x7684;&#x51FD;&#x6570;</p>
+</li>
+<li><p>dynamic_cast<type>(expression)</type></p>
+<p>&#x53EA;&#x7BA1;&#x591A;&#x6001;&#x865A;&#x51FD;&#x6570;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x5FC5;&#x987B;&#x7531;virtual&#x51FD;&#x6570;</p>
+<p>&#x7528;&#x6765;&#x68C0;&#x67E5; downcast&#x662F;&#x5426;&#x5B89;&#x5168;</p>
+</li>
+<li><p>const_cast<type>(expression)</type></p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> <span class="token keyword">int</span> g <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token operator">&amp;</span>h <span class="token operator">=</span> <span class="token keyword">const_cast</span><span class="token operator">&lt;</span><span class="token keyword">int</span> <span class="token operator">&amp;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5C06;const&#x8F6C;&#x6362;&#x4E3A;&#x975E;const&#x7C7B;&#x578B;</p>
+</li>
+<li><p>reinterperet_cast<type>(expression)</type></p>
+<p>&#x6307;&#x9488;&#x548C;int&#x76F8;&#x4E92;&#x8F6C;&#x6362;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token operator">*</span>pA <span class="token operator">=</span> <span class="token operator">&amp;</span>b<span class="token punctuation">;</span>
+a <span class="token operator">=</span> <span class="token keyword">reinterpret_cast</span><span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>pA<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//correct</span>
+pA <span class="token operator">=</span> <span class="token keyword">reinterpret_cast</span><span class="token operator">&lt;</span>A<span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//correct</span>
+b <span class="token operator">=</span> <span class="token keyword">reinterpret_cast</span><span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//Error, can not be used to convert int to int</span>
+</code></pre>
+</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-08-31 00:15:12
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="polymorphism.html" class="navigation navigation-prev " aria-label="Previous page: 多态">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Computer Organization/Chapter1/Chapter1.html" class="navigation navigation-next " aria-label="Next page: Chapter1_综述">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"重载","level":"2.9","depth":1,"next":{"title":"Chapter1_综述","level":"3.1","depth":1,"path":"Computer Organization/Chapter1/Chapter1.md","ref":"./Computer Organization/Chapter1/Chapter1.md","articles":[]},"previous":{"title":"多态","level":"2.8","depth":1,"path":"OOP/polymorphism.md","ref":"./OOP/polymorphism.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","flexible-alerts","prism","prism-themes"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"ignore":["asm"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"flexible-alerts":{"style":"flat","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/overloading.md","mtime":"2020-08-30T16:15:12.005Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-30T16:16:17.757Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
