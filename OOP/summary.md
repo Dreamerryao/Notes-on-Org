@@ -28,7 +28,7 @@
 
 ### 三大特性
 
-- [ ] 封装
+- [x] 封装
 - [ ] 继承
 - [ ] 多态
 
@@ -36,18 +36,18 @@
 
 :star:C语言虽然可以很灵活的访问内存空间，但其属于面向过程的编程语言，在编译时暴露出的问题不多，同时对大型程序的支持效果很差
 
-- [ ] Data Abstraction
-- [ ] Access control
-- [ ] Initialization & Cleanup
+- [x] Data Abstraction
+- [x] Access control
+- [x] Initialization & Cleanup
 - [ ] Function overloading
-- [ ] Streams for I/O
-- [ ] constant
+- [x] Streams for I/O
+- [x] constant
 - [ ] Name Control
 - [ ] Inline function
-- [ ] references
+- [x] references
 - [ ] Operator overloading
 - [ ] More safe and powerful memory management
-- [ ] Support for OOP
+- [x] Support for OOP
 - [ ] templates
 - [ ] exception handling
 - [ ] More extensive libraries  STL
@@ -57,6 +57,13 @@
 :arrow_down_small: C++不是C语言，C++提供了更高层的语言特性
 
 :arrow_down_small: C++是一种综合性语言，保留了面向过程编程的特性，增加了面向对象编程特性，还增加了泛型编程的特性​
+
+
+
+### TODO
+
+- function overloading (ppt 4)
+- STL (ppt 4)
 
 
 

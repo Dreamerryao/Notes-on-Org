@@ -7,6 +7,8 @@
 * [储备知识](./OOP/object.md)
 * [引用](./OOP/reference.md)
 * [const](./OOP/const.md)
+* [类&&构造](./OOP/class.md)
+* [内联函数](./OOP/inline.md)
 
 ## 计算机组成
 * [Chapter1_综述](./Computer Organization/Chapter1/Chapter1.md)
