@@ -140,6 +140,34 @@ new会对对象进行初始化操作，而malloc不会
 
 
 
+## ::运算符  ->作用域
+
+看完代码就懂了
+
+``` cpp
+#include <iostream>
+using namespace std;
+int a;
+void f(){}
+class S{
+    public:
+    int a;
+    void f();
+};
+void S::f(){
+    ::f(); //如果不这么写就会调用自己的f(),即递归
+    ::a++;//全局变量a
+    a++;//S内部的变量a++
+}
+int main(){
+    S s;
+    f();
+    s.f();
+}
+```
+
+
+
 ## :star: Tips
 
 - 关于日常弄混的 >>  <<

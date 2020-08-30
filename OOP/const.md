@@ -24,6 +24,44 @@ const变量遵循**变量的作用域原则**，但编译器默认const是内部
 >
 > 如果const int size 不是在编译时有确定值的话，int test[size];会Illegal: 变量size的值不可用作常量
 
+看一段代码
+
+```cpp
+
+#include <iostream>
+using namespace std;
+class A
+{
+    const int size;
+    int array[size];
+public:
+    A(int s) : size(s)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            array[i] = 0;
+        }
+        cout << "!!" << endl;
+    }
+};
+int main()
+{
+    A a(2);
+    return 0;
+}
+```
+
+> [!ERROR|style:flat|label:output]
+>
+> invalid use of non-static data member 'A::size'
+
+解决方法 make the const value static：
+
+- static const int size = 100;
+- enum {size = 100};
+
+
+
 类似的，对一整块内存如数组来进行const操作时，编译器也会将其当做运行时const
 
 ![](./1.png)
@@ -41,7 +79,7 @@ const变量遵循**变量的作用域原则**，但编译器默认const是内部
   int const*u;
   ```
 
-  > [TIP|style:flat]
+  > [!TIP|style:flat]
   >
   > int const * u的理解是 u是一个指向恰好是const的 int类型指针，不推荐使用这种形式
 
@@ -106,7 +144,11 @@ const int g();
 
 :star: 关于左值: 赋值运算符左边的值叫左值，不能为左值即**不能被赋值，不能被修改**
 
+### const 成员函数
 
+const成员函数不能修改该对象中的任何成员变量
+
+同时，不能调用 non-const 函数
 
 ## Tips
 
