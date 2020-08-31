@@ -12,7 +12,8 @@
         "todo",
         "flexible-alerts", 
         "prism", 
-        "prism-themes"
+        "prism-themes",
+        "pageview-count"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
