@@ -160,19 +160,19 @@ z = 3+y;//error
 
 ### 内置的转换运算符介绍
 
-- static_cast<type>(expression)
+- `static_cast<type>(expression)`
 
-  int b = static_cast<int>(a);
+  `int b = static_cast<int>(a);`
 
   注意 const常量类型不能转换成非const 有专门的函数
 
-- dynamic_cast<type>(expression)
+- `dynamic_cast<type>`(expression)
 
   只管多态虚函数的转换，必须由virtual函数
 
   用来检查 downcast是否安全
 
-- const_cast<type>(expression)
+- `const_cast<type>`(expression)
 
   ``` cpp
   const int g = 20;
@@ -181,7 +181,7 @@ z = 3+y;//error
 
   将const转换为非const类型
 
-- reinterperet_cast<type>(expression)
+- `reinterperet_cast<type>`(expression)
 
   指针和int相互转换
 

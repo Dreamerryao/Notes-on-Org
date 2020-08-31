@@ -168,6 +168,63 @@ int main(){
 
 
 
+## namespace
+
+std 就是一个namespace
+
+为了不让自己定义的一些函数与系统函数重名，采取了namespace封装了起来
+
+namespace 和类有类似的功能，作用域。
+
+使用using 可以少些很多东西
+
+``` cpp
+using namespace std;
+//就不用写 std::cout
+```
+
+也可以直接using一个函数
+
+```cpp
+using MyNamespace::MyFunc;
+Myfunc();
+```
+
+注意这里
+
+``` cpp
+ // Mylib.h 
+namespace XLib { 
+    void x(); 
+    void y(); 
+} 
+
+namespace YLib { 
+    void y(); 
+    void z(); 
+}
+void main() { 
+   using namespace XLib; 
+   using namespace YLib; 
+   x(); // OK 
+   //y(); // Error: ambiguous 
+   XLib::y(); // OK, resolves to XLib 
+   z(); // OK 
+}
+```
+
+namespace可以取别名
+
+``` cpp
+namespace MyNamespace { 
+    void f(); 
+} 
+namespace pa = MyNamespace; 
+pa::f();
+```
+
+可以有同名的namespace存在，不会有error
+
 ## :star: Tips
 
 - 关于日常弄混的 >>  <<

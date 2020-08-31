@@ -71,7 +71,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Computer Organization/Chapter1/Chapter1.html" />
+    <link rel="next" href="template.html" />
     
     
     <link rel="prev" href="polymorphism.html" />
@@ -233,6 +233,19 @@
             
                     
                     重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="template.html">
+            
+                <a href="template.html">
+            
+                    
+                    模板
             
                 </a>
             
@@ -436,21 +449,21 @@
 <p>&#x6700;&#x540E;&#x662F;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x8F6C;&#x6362;</p>
 <h3 id="&#x5185;&#x7F6E;&#x7684;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x4ECB;&#x7ECD;">&#x5185;&#x7F6E;&#x7684;&#x8F6C;&#x6362;&#x8FD0;&#x7B97;&#x7B26;&#x4ECB;&#x7ECD;</h3>
 <ul>
-<li><p>static_cast<type>(expression)</type></p>
-<p>int b = static_cast<int>(a);</int></p>
+<li><p><code>static_cast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>type</span><span class="token punctuation">&gt;</span></span>(expression)</code></p>
+<p><code>int b = static_cast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>int</span><span class="token punctuation">&gt;</span></span>(a);</code></p>
 <p>&#x6CE8;&#x610F; const&#x5E38;&#x91CF;&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x8F6C;&#x6362;&#x6210;&#x975E;const &#x6709;&#x4E13;&#x95E8;&#x7684;&#x51FD;&#x6570;</p>
 </li>
-<li><p>dynamic_cast<type>(expression)</type></p>
+<li><p><code>dynamic_cast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>type</span><span class="token punctuation">&gt;</span></span></code>(expression)</p>
 <p>&#x53EA;&#x7BA1;&#x591A;&#x6001;&#x865A;&#x51FD;&#x6570;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x5FC5;&#x987B;&#x7531;virtual&#x51FD;&#x6570;</p>
 <p>&#x7528;&#x6765;&#x68C0;&#x67E5; downcast&#x662F;&#x5426;&#x5B89;&#x5168;</p>
 </li>
-<li><p>const_cast<type>(expression)</type></p>
+<li><p><code>const_cast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>type</span><span class="token punctuation">&gt;</span></span></code>(expression)</p>
 <pre class="language-"><code class="lang-cpp"><span class="token keyword">const</span> <span class="token keyword">int</span> g <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
 <span class="token keyword">int</span> <span class="token operator">&amp;</span>h <span class="token operator">=</span> <span class="token keyword">const_cast</span><span class="token operator">&lt;</span><span class="token keyword">int</span> <span class="token operator">&amp;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>&#x5C06;const&#x8F6C;&#x6362;&#x4E3A;&#x975E;const&#x7C7B;&#x578B;</p>
 </li>
-<li><p>reinterperet_cast<type>(expression)</type></p>
+<li><p><code>reinterperet_cast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>type</span><span class="token punctuation">&gt;</span></span></code>(expression)</p>
 <p>&#x6307;&#x9488;&#x548C;int&#x76F8;&#x4E92;&#x8F6C;&#x6362;</p>
 <pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
 <span class="token keyword">int</span> <span class="token operator">*</span>pA <span class="token operator">=</span> <span class="token operator">&amp;</span>b<span class="token punctuation">;</span>
@@ -461,7 +474,7 @@ b <span class="token operator">=</span> <span class="token keyword">reinterpret_
 </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-08-31 00:15:12
+2020-09-01 00:19:29
 </span></footer>
                                 
                                 </section>
@@ -494,7 +507,7 @@ b <span class="token operator">=</span> <span class="token keyword">reinterpret_
                 </a>
                 
                 
-                <a href="../Computer Organization/Chapter1/Chapter1.html" class="navigation navigation-next " aria-label="Next page: Chapter1_综述">
+                <a href="template.html" class="navigation navigation-next " aria-label="Next page: 模板">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -505,7 +518,7 @@ b <span class="token operator">=</span> <span class="token keyword">reinterpret_
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"重载","level":"2.9","depth":1,"next":{"title":"Chapter1_综述","level":"3.1","depth":1,"path":"Computer Organization/Chapter1/Chapter1.md","ref":"./Computer Organization/Chapter1/Chapter1.md","articles":[]},"previous":{"title":"多态","level":"2.8","depth":1,"path":"OOP/polymorphism.md","ref":"./OOP/polymorphism.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","flexible-alerts","prism","prism-themes","pageview-count"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"ignore":["asm"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"prism-themes":{},"flexible-alerts":{"style":"flat","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/overloading.md","mtime":"2020-08-30T16:15:12.005Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-31T11:19:16.424Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"重载","level":"2.9","depth":1,"next":{"title":"模板","level":"2.10","depth":1,"path":"OOP/template.md","ref":"./OOP/template.md","articles":[]},"previous":{"title":"多态","level":"2.8","depth":1,"path":"OOP/polymorphism.md","ref":"./OOP/polymorphism.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","flexible-alerts","prism","prism-themes","pageview-count"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"ignore":["asm"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"prism-themes":{},"flexible-alerts":{"style":"flat","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/overloading.md","mtime":"2020-08-31T16:19:29.965Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-31T16:23:58.420Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

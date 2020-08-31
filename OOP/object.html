@@ -240,6 +240,19 @@
             
         </li>
     
+        <li class="chapter " data-level="2.10" data-path="template.html">
+            
+                <a href="template.html">
+            
+                    
+                    模板
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -465,6 +478,46 @@ test dtor
     s<span class="token punctuation">.</span><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
+<h2 id="namespace">namespace</h2>
+<p>std &#x5C31;&#x662F;&#x4E00;&#x4E2A;namespace</p>
+<p>&#x4E3A;&#x4E86;&#x4E0D;&#x8BA9;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#x4E0E;&#x7CFB;&#x7EDF;&#x51FD;&#x6570;&#x91CD;&#x540D;&#xFF0C;&#x91C7;&#x53D6;&#x4E86;namespace&#x5C01;&#x88C5;&#x4E86;&#x8D77;&#x6765;</p>
+<p>namespace &#x548C;&#x7C7B;&#x6709;&#x7C7B;&#x4F3C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<p>&#x4F7F;&#x7528;using &#x53EF;&#x4EE5;&#x5C11;&#x4E9B;&#x5F88;&#x591A;&#x4E1C;&#x897F;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token comment">//&#x5C31;&#x4E0D;&#x7528;&#x5199; std::cout</span>
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;using&#x4E00;&#x4E2A;&#x51FD;&#x6570;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">using</span> MyNamespace<span class="token operator">::</span>MyFunc<span class="token punctuation">;</span>
+<span class="token function">Myfunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;</p>
+<pre class="language-"><code class="lang-cpp"> <span class="token comment">// Mylib.h </span>
+<span class="token keyword">namespace</span> XLib <span class="token punctuation">{</span> 
+    <span class="token keyword">void</span> <span class="token function">x</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">void</span> <span class="token function">y</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+
+<span class="token keyword">namespace</span> YLib <span class="token punctuation">{</span> 
+    <span class="token keyword">void</span> <span class="token function">y</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">void</span> <span class="token function">z</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+   <span class="token keyword">using</span> <span class="token keyword">namespace</span> XLib<span class="token punctuation">;</span> 
+   <span class="token keyword">using</span> <span class="token keyword">namespace</span> YLib<span class="token punctuation">;</span> 
+   <span class="token function">x</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// OK </span>
+   <span class="token comment">//y(); // Error: ambiguous </span>
+   <span class="token class-name">XLib</span><span class="token operator">::</span><span class="token function">y</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// OK, resolves to XLib </span>
+   <span class="token function">z</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// OK </span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>namespace&#x53EF;&#x4EE5;&#x53D6;&#x522B;&#x540D;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">namespace</span> MyNamespace <span class="token punctuation">{</span> 
+    <span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+<span class="token keyword">namespace</span> pa <span class="token operator">=</span> MyNamespace<span class="token punctuation">;</span> 
+pa<span class="token operator">::</span><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x6709;&#x540C;&#x540D;&#x7684;namespace&#x5B58;&#x5728;&#xFF0C;&#x4E0D;&#x4F1A;&#x6709;error</p>
 <h2 id="tips"><img align="absmiddle" alt=":star:" class="emoji" src="../gitbook/gitbook-plugin-advanced-emoji/emojis/star.png" title=":star:"> Tips</h2>
 <ul>
 <li><p>&#x5173;&#x4E8E;&#x65E5;&#x5E38;&#x5F04;&#x6DF7;&#x7684; &gt;&gt;  &lt;&lt;</p>
@@ -485,7 +538,7 @@ test dtor
 </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-08-30 17:24:37
+2020-08-31 23:35:41
 </span></footer>
                                 
                                 </section>
@@ -529,7 +582,7 @@ test dtor
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"储备知识","level":"2.2","depth":1,"next":{"title":"reference","level":"2.3","depth":1,"path":"OOP/reference.md","ref":"./OOP/reference.md","articles":[]},"previous":{"title":"指北","level":"2.1","depth":1,"path":"OOP/summary.md","ref":"./OOP/summary.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","flexible-alerts","prism","prism-themes","pageview-count"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"ignore":["asm"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"prism-themes":{},"flexible-alerts":{"style":"flat","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/object.md","mtime":"2020-08-30T09:24:37.353Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-31T11:19:16.424Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"储备知识","level":"2.2","depth":1,"next":{"title":"reference","level":"2.3","depth":1,"path":"OOP/reference.md","ref":"./OOP/reference.md","articles":[]},"previous":{"title":"指北","level":"2.1","depth":1,"path":"OOP/summary.md","ref":"./OOP/summary.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter","advanced-emoji","todo","flexible-alerts","prism","prism-themes","pageview-count"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"ignore":["asm"]},"emphasize":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"prism-themes":{},"flexible-alerts":{"style":"flat","note":{"label":"Note","icon":"fa fa-info-circle","className":"info"},"tip":{"label":"Tip","icon":"fa fa-lightbulb-o","className":"tip"},"warning":{"label":"Warning","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"Attention","icon":"fa fa-ban","className":"danger"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css"}},"file":{"path":"OOP/object.md","mtime":"2020-08-31T15:35:41.454Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-31T16:23:58.420Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
