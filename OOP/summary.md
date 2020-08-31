@@ -45,10 +45,10 @@
 - [ ] Name Control
 - [x] Inline function
 - [x] references
-- [ ] Operator overloading
+- [x] Operator overloading
 - [x] More safe and powerful memory management
 - [x] Support for OOP
-- [ ] templates
+- [x] templates
 - [ ] exception handling
 - [ ] More extensive libraries  STL
 
@@ -65,7 +65,6 @@
 - STL (ppt 4)
 - 多重继承 (ppt 7)
 - static in class (ppt 7)
-- namespace (ppt 7)
 
 
 

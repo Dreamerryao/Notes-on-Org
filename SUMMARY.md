@@ -12,6 +12,7 @@
 * [继承](./OOP/inheritance.md)
 * [多态](./OOP/polymorphism.md)
 * [重载](./OOP/overloading.md)
+* [模板](./OOP/template.md)
 
 ## 计算机组成
 * [Chapter1_综述](./Computer Organization/Chapter1/Chapter1.md)
