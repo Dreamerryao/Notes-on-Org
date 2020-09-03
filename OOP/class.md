@@ -4,6 +4,8 @@
 >
 > class就是体现c++ data abstract的地方，也展示了c++第一大牛逼特性:**封装**
 
+
+
 ## 封装
 
 ### class && object

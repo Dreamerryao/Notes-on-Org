@@ -4,6 +4,14 @@
 
 ## C++ 储备知识 (跳跳跳
 
+> 你可能还不知道的C++内置类型:
+>
+> bool,char,int,double,float,void
+>
+> 可以使用一个或多个类型修饰符进行修饰
+>
+> signed unsigned short long
+
 ``` cpp
 #include <iostream>
 using namespace std; //命名空间
